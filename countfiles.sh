@@ -1,1 +1,3 @@
-ls -l | grep "^-" | wc -l
+#! /bin/bash 
+
+find | wc -l
