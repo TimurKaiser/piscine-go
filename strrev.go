@@ -1,6 +1,6 @@
 package piscine
 
-func StrRevs(s string) string {
+func StrRev(s string) string {
 	runes := []rune(s)
 	var runesinv []rune
 	for i := len(runes) - 1; i >= 0; i-- {
