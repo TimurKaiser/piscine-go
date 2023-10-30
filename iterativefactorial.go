@@ -3,7 +3,8 @@ package piscine
 import "go/importer"
 
 func IterativeFactorial(nb int) int {
-	r := 1	| i := 1
+	r := 1;
+	i := 1;
 	if nb < 0 {
 		return 0
 	}
