@@ -1,17 +1,13 @@
 package piscine
 
-import (
-	"fmt"
-)
-
 func IterativeFactorial(nb int) int {
-	result := 1
-	temp := 1
+	i := 1
+	j := 1
 	if nb < 0 {
 		return 0
 	}
-	for i := 0; i < nb; i++ {
-		result = result * temp
-		temp++
+	for k := 0; k < nb; k++ {
+		i = i * j
+		j++
 	}
 }
