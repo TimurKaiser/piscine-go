@@ -8,4 +8,5 @@ func IterativePower(nb int, power int) int {
 	for i := 0; i < power; i++ {
 		r = r * nb
 	}
+	return r
 }
