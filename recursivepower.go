@@ -1,9 +1,9 @@
 package piscine
 
 func RecursivePower(nb int, power int) int {
+	r := 1
 	if nb < 0 {
 		return 0
 	}
-	i := 1
-	return r = nb * power * power
+	return r == nb*power*power
 }
