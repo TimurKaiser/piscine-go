@@ -1,7 +1,7 @@
 package main 
 
 import (
-	 "fmt"
+	"fmt"
 )
 
 func IterativeFactorial(nb int) int {
