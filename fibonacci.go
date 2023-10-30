@@ -12,7 +12,7 @@ func Fibonacci(index int) int {
 	}
 	i := 0
 	j := 1
-	for k :=2; k <= index; k++ {
+	for k := 2; k <= index; k++ {
 		temp := i // utiliser temp en tant que variable temporaire pour stocker une valeur temporairement pour la donner a une autre variable askipGPT
 		i = j
 		j = temp + j // du coup ca prends la valeur initiale de i malgré les modif c'est trop bien
