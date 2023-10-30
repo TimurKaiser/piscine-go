@@ -1,13 +1,17 @@
 package piscine
 
+import "go/importer"
+
 func IterativeFactorial(nb int) int {
-	if nb < 20 && nb >= 0 {
-		i := 1
-		for j := nb; j > 0; i-- {
-			i = i * j
-		}
-		return i
-	} else {
+	r := 1	| i := 1
+	if nb < 0 {
 		return 0
+	}
+	for j := 0; j < nb; j++ {
+		r = r * i
+		i++
+		if j > 20 {
+			return 0
+		}
 	}
 }
