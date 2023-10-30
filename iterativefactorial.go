@@ -1,7 +1,5 @@
 package piscine
 
-import "go/importer"
-
 func IterativeFactorial(nb int) int {
 	r := 1
 	i := 1
