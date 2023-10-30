@@ -3,10 +3,10 @@ package main
 import "github.com/01-edu/z01"
 
 func main() {
-	QuadA(1, 1)
+	QuadC(, 0)
 }
 
-func QuadA(x, y int) {
+func QuadC(x, y int) {
 	if x <= 0 || y <= 0 {
 		z01.PrintRune('P')
 		z01.PrintRune('A')

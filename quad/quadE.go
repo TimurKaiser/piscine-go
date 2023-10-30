@@ -1,12 +1,12 @@
 package main
 
-import "github.com/01-edu/z01"
+import "github.com/01-edu/z01" 	
 
 func main() {
-	QuadA(6, 8)
+	QuadE(5, 3)
 }
 
-func QuadA(x, y int) {
+func QuadE(x, y int) {
 	if x <= 0 || y <= 0 {
 		z01.PrintRune('P')
 		z01.PrintRune('A')
@@ -16,21 +16,20 @@ func QuadA(x, y int) {
 		z01.PrintRune('F')
 		z01.PrintRune('\n')
 		return
-	}
-
-	if x == 1 {
-		for i := 0; i < y; i++ {
-			if i == 0 {
-				z01.PrintRune('A')
-			} else if i == y-1 {
-				z01.PrintRune('C')
-			} else {
-				z01.PrintRune('B')
+	} 
+		if x == 1 {
+			for i := 0; i < y; i++ {
+				if i == 0 {
+					z01.PrintRune('A')
+				} else if i == y-1 {
+					z01.PrintRune('C')
+				} else {
+					z01.PrintRune('B')
+				}
+				z01.PrintRune('\n')
 			}
-			z01.PrintRune('\n')
+			return
 		}
-		return
-	}
 
 	// Ligne du haut
 	z01.PrintRune('A')

@@ -7,6 +7,8 @@ func main() {
 	for i := 1; i < 27; i++ {
 		z01.PrintRune(char)
 		char++
+
+		z01.PrintRune('\n')
+
 	}
-	z01.PrintRune('\n')
 }
