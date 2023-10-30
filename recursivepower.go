@@ -5,5 +5,8 @@ func RecursivePower(nb int, power int) int {
 	if nb < 0 {
 		return 0
 	}
-	return r == nb*power*power
+	for i := 0; i < power; i++{
+		r = nb * power
+	}
+	return r
 }
