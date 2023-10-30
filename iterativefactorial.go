@@ -9,5 +9,6 @@ func IterativeFactorial(nb int) int {
 	for k := 0; k < nb; k++ {
 		i = i * j
 		j++
+		return
 	}
 }
