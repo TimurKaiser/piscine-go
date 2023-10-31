@@ -1,3 +1,5 @@
+package piscine
+
 func NRune(s string, n int) rune {
 	runes := []rune(s) // quest3 exo strlen
 	if n < 1 {
