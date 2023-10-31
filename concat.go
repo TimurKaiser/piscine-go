@@ -1,15 +1,13 @@
 package piscine
 
 func Concat(str1 string, str2 string) string {
-	i := 0 
-	j := 0
-	k := 0
-	for ,_ char := range str1 { // commande ,_ reprise sur alphacount, cela permet de prendre uniquement ce qui nous intéresse
-		return i
+	i := 1
+	j := 1
+	for i := 1; i < len(str1); i++ {
+		j = j + string(str1[i]) // i permet d'aller à l'index de la position, par exemple le str[0] de Hello est "H"
 	}
-	for ,_ char ;= range str2{
-		return j
+	for i := 1; i < len(str2); i++ {
+		j = j + string(str2[1])
 	}
-	k = i + j
-	return k
+	return j
 }
