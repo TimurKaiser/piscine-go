@@ -6,5 +6,5 @@ func Index(s string, toFind string) int {
 			return i
 		}
 	}
-	return -1 // obligation de return pour les accolades
+	return -1 // vaux mieux rajouter -1 pour tout les autres cas ça rebouche les accolades et reponds aux negatifs
 }
