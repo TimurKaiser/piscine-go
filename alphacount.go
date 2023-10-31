@@ -7,5 +7,5 @@ func AlphaCount(s string) int {
 		i++
 		}
 	}
-	return i 
+	return i
 }
