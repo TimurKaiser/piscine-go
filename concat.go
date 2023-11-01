@@ -10,4 +10,4 @@ func Concat(str1 string, str2 string) string {
 	}
 	return j
 }
-// on fait j ;= "" pour remplir des characteres et non des chiffres comme i:=1
+
