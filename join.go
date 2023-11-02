@@ -10,4 +10,3 @@ func Join(strs []string, sep string) string {
 	}
 	return result
 }
-
