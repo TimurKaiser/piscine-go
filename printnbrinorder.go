@@ -12,7 +12,7 @@ func PrintNbrInOrder(n int) {
 		if len(nb) == 1 {
 			z01.PrintRune(rune(nb[0] + 48))
 		} else {
-			bol := true // code à revoir car pris à quelqu'un d'autre pour avanver cause de retard, j'étais bloqué sur l'exo
+			bol := true // code à revoir car pris à quelqu'un d'autre pour avanver cause de retard, j'étais bloqué sur l'exo, à retravailler
 			temp := 0
 			for bol == true {
 				bol = false
