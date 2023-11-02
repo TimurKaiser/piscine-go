@@ -4,7 +4,6 @@ func TrimAtoi(s string) int {
 	x := false // x pour le signe négatif
 	y := true  // chiffre ou pas
 	r := 0
-	eof := 0
 	for i, char := range s {
 		if i == 0 && char == '-' {
 			x = true // détecteur de -
@@ -23,5 +22,4 @@ func TrimAtoi(s string) int {
 			return r // sinon le print pas  donc c'est positif
 		}
 	}
-	return eof
 }
