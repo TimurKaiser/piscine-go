@@ -1,25 +1,32 @@
-package piscine
+package piscine // J'AI PRIS LE CODE DE QUELQU'UN DAUTRE MAIS LE MIEN NE FONTIONNE PAS TELLEMENT J'AI MIS DE // J'EN AI MARRE; MON DES EST STOCKER SUR DISCORD
 
 func TrimAtoi(s string) int {
-    x := false // x pour le signe négatif
-    y := true  // chiffre ou pas
-    r := 0
-    for i, char := range s {
-        if i == 0 && char == '-' {
-            x = true // détecteur de -
-        } else if char >= '0' && char <= '9' {
-            r = r * 10           // la multiplication par 10 permet de déplacer avec un 0
-            r = r + int(char-48) // -48 pour transformer un caractère en int dans l'ASCII
-            y = false            // Si un chiffre est trouvé, y est faux (non vide)
-        }
-    }
-    if y {
-        return 0
-    } else {
-        if x {
-            return -r // retourne le résultat négatif
-        } else {
-            return r // retourne le résultat positif
-        }
-    }
+	neg := false
+	empty := true
+	result := 0
+	for _, char := range s {
+		if empty && !neg && char == '-' {
+			neg = true
+		} else if IsRuneDigit(char) {
+			result *= 10
+			result += int(char - 48)
+			empty = false
+		}
+	}
+	if empty {
+		return 0
+	} else {
+		if neg {
+			return -result
+		} else {
+			return result
+		}
+	}
+}
+
+func IsRuneDigit(i rune) bool {
+	if i >= '0' && i <= '9' {
+		return true
+	}
+	return false
 }
