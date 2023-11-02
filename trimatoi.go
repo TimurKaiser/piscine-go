@@ -8,7 +8,7 @@ func TrimAtoi(s string) int {
 	for i, char := range s {
 		if i == 0 && char == '-' {
 			x = true // détecteur de -
-		} else if digit(char) {
+		} else if char >= '0' && char <= '9' {
 			r = r * 10           // la multiplacation par 10 permet de deplacer avec un 0
 			r = r + int(char-48) // -48 pour transfermer un charractere en int dans l'ascii
 			y = false            // Si un chiffre est trouvé, y est faux (non vide)
