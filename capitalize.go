@@ -19,7 +19,7 @@ func Capitalize(s string) string {
 }
 
 func Prim(a rune) bool {
-	if (a >= 'A' && a <= 'Z')(a >= 'a' && a <= 'z')(a >= '0' && a <= '9') {
+	if (a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z') || (a >= '0' && a <= '9') {
 		return true
 	}
 	return false
