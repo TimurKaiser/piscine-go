@@ -1,4 +1,4 @@
-package main
+package piscine
 
 func BasicJoin(elems []string) string {
 	String := ""
