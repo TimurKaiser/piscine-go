@@ -13,7 +13,7 @@ func setPoint(ptr *point) {
 }
 
 func main() {
-	points := &point {}
+	points := &point{}
 	setPoint(points)
 
 	result := ("c = 42, y = 21\n")
