@@ -10,7 +10,7 @@ func printStr(s string) {
 }
 
 func isEven(nbr int) {
-	if isEven == 1 {
+	if nbr == 1 {
 		return
 	} else {
 		return
