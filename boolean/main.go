@@ -1,26 +1,31 @@
 package main
 
-import "github.com/01-edu/z01"
+import (
+	"os"
+	"github.com/01-edu/z01"
+)
 
 func printStr(s string) {
-	for _, r := range s {
+	str := []rune(s)
+	for _, r := range str {
 		z01.PrintRune(r)
 	}
 	z01.PrintRune('\n')
 }
 
-func isEven(nbr int) {
-	if nbr == 1 {
-		return
+func isEven(nbr int) bool{
+	if nbr % 2 == 0 {
+		return true
 	} else {
-		return
+		return false
 	}
 }
 
 func main() {
-	if isEven(len(s)) == 1 {
-		printStr("EvenMsg")
+	param := os.Args
+	if isEven(len(param)-1) == true {
+		printStr("I have an even number of arguments")
 	} else {
-		printStr("OddMsg")
+		printStr("I have an odd number of arguments")
 	}
 }
