@@ -19,6 +19,6 @@ func main() {
 	result := ("c = 42, y = 21\n")
 
 	for _, c := range result {
-		z01.PrintRune(c)
+		z01.PrintRune(x)
 	}
 }
