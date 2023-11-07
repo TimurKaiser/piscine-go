@@ -10,4 +10,3 @@ func CountIf(f func(string) bool, tab []string) int {
 	}
 	return 0
 }
-
