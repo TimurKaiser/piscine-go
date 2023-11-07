@@ -1,10 +1,20 @@
 package piscine
 
+func f(a, b int) int {
+	if a > b {
+		return 1
+	} else if a < b {
+		return -1
+	} else {
+		return 0
+	}
+}
+
 func IsSorted(f func(a, b int) int, a []int) bool {
 	for i := 1; i < len(a); i++ {
 		if f(a[i-1], a[i]) > 0 {
-			return true
+			return false
 		}
 	}
-	return false
+	return true
 }
