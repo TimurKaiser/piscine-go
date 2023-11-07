@@ -4,7 +4,8 @@ func CountIf(f func(string) bool, tab []string) int {
 	result := 0
 	for _, i := range (tab) {
 		if f(i) {
-			return result += tab
+			result += tab
+			return result
 		}
 	}
 	return false
