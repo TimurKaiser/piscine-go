@@ -1,9 +1,9 @@
 package piscine
 
 func IsSorted(f func(a, b int) int, a []int) bool {
-	//i := 0
+	// i := 0
 	var res []int
-	//t := 0
+	// t := 0
 	for i := 0; i < len(a); i += 2 {
 		res = append(res, f(a[i], a[i+1]))
 	}
