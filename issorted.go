@@ -7,8 +7,8 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 	}
 	for j := 1; j < len(res); j++ {
 		if res[j-1] > res[j] {
-			return true
+			return false
 		}
 	}
-	return false
+	return true
 }
