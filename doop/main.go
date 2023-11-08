@@ -1,4 +1,4 @@
-package main
+package main // si tu reuissis cette exo t'es directe pris c'est quoi ca, merci quentin
 
 import "os"
 
