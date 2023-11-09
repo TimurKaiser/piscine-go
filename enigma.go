@@ -7,8 +7,4 @@ func Enigma(a ***int, b *int, c *******int, d ****int) {
 	*a = *b
 
 	Enigma(&a, &b, &c, &d) // switch les valeyurs par pointages
-	
-
-	return a
-
 }
