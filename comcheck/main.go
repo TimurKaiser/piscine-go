@@ -8,6 +8,5 @@ func main() {
 		if arg == "01" || arg == "galaxy" || arg == "galaxy 01" {
 			os.Stdout.WriteString("Alert!!!\n")
 		}
-		return nil
 	}
 }
