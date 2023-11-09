@@ -10,9 +10,9 @@ func CollatzCountdown(start int) int {
 		if start%2 == 0 { // en gros si le reste(%) de la division euclidienne est 0 c'est divisible par deux donc on divise par deux
 			start = start / 2
 		} else {
-			start = start * 3 + 1
+			start = start*3 + 1
 		}
-		steps ++
+		steps++
 	}
 	return steps
 }
