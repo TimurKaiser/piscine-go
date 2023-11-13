@@ -1,4 +1,4 @@
-package piscine
+package main
 
 type NodeL struct {
 	Data interface{}
@@ -20,5 +20,4 @@ func ListPushBack(l *List, data interface{}) {
 		l.Tail.Next = newNode
 		l.Tail = newNode
 	}
-
 }
