@@ -1,0 +1,36 @@
+package main
+
+import "github.com/01-edu/z01"
+
+func main() {
+	QuadB(1, 1)
+}
+
+func PrintRune(r rune, n int) {
+	for i := 0; i < n; i++ {
+		z01.PrintRune(r)
+	}
+}
+
+func PrintLine(a, b, c rune, x int) {
+	z01.PrintRune(a)
+	if x > 1 {
+		PrintRune(b, x-2)
+		z01.PrintRune(c)
+	}
+	z01.PrintRune('\n')
+}
+
+func QuadB(x, y int) {
+	if x <= 0 || y <= 0 {
+		return
+	}
+
+	PrintLine('/', '*', '\\', x)
+	if y > 1 {
+		for i := 2; i < y; i++ {
+			PrintLine('|', ' ', '|', x)
+		}
+		PrintLine('\\', '*', '/', x)
+	}
+}
