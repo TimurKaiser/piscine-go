@@ -6,7 +6,7 @@ func ListSize(l *List) int {
 
 	for noeud != nil { // != ( différent de )
 		taille++
-		noeud.Next //.Next ( noeud suivant)
+		noeud = noeud.Next //.Next ( noeud suivant)
 	}
 	return taille
 }
