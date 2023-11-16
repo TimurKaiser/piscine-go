@@ -2,7 +2,7 @@ package piscine
 
 func BTreeApplyPostorder(root *TreeNode, f func(...interface{}) (int, error)) {
 	if root == nil {
-		return 0
+		return nil
 	}
 	BTreeApplyPostorder(root.Left, f)
 	BTreeApplyPostorder(root.Right, f)
