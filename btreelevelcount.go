@@ -11,5 +11,4 @@ func BTreeLevelCount(root *TreeNode) int {
 		return lDepth + 1
 	}
 	return rDepth + 1
-
 }
